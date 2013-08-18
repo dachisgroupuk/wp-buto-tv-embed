@@ -24,7 +24,7 @@ class WpButoTvEmbedAdmin extends WpButoTvEmbedCore
      * @param void
      * @return void
      */
-    function add_admin_pages()
+    static function add_admin_pages()
     {
         add_media_page( __( 'Buto TV Embed' , 'imv'), __( 'Buto TV Embed' , 'imv'), 'create_users', 'buto-embed', array( __CLASS__, 'index_page' ) );
     }
