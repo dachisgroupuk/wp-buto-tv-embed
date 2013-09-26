@@ -16,6 +16,8 @@ class WpButoTvEmbedAdmin extends WpButoTvEmbedCore
         add_action( 'admin_menu', array( __CLASS__, 'add_admin_pages' ) );
 
         register_deactivation_hook( self::$plugin_file, array( $this, 'uninstall' ) );
+        //register_deactivation_hook( WpButoTvEmbedAdmin::get_plugin_file(), array( $this, 'uninstall' ) );
+
     }
 
     /**

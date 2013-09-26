@@ -15,7 +15,7 @@ class WpButoTvEmbedFrontend extends WpButoTvEmbedCore
         parent::init();
 
         /**
-         * Add the Kulu Valley embeds
+         * Add the Buto TV embeds
          */
         wp_embed_register_handler( 'butotv', '#http://play\.buto\.tv/(?<video_id>[A-za-z0-9]+)#i', array( __CLASS__, 'wp_embed_handler_butotv' ) );
     }
